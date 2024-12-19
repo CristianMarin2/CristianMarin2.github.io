@@ -1,0 +1,200 @@
+/* ======================= */
+/* General Styles */
+/* ======================= */
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* ======================= */
+/* Navbar Styles */
+/* ======================= */
+nav {
+    background-color: red !important; /* Set the background color to red */
+    color: white !important; /* Ensure the text is readable */
+}
+
+nav a {
+    color: white !important; /* Ensure the links are visible */
+}
+
+body.dark-mode nav {
+    background-color: #1c1c1c !important;
+    color: white !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+body.dark-mode .nav-link.active {
+    color: #f0f0f0 !important; /* Highlight color for dark mode */
+}
+
+/* ======================= */
+/* Footer Styles */
+/* ======================= */
+footer {
+    background-color: white !important;
+    color: black !important;
+}
+
+body.dark-mode footer {
+    background-color: #1c1c1c !important;
+    color: white !important;
+}
+
+footer p {
+    color: black !important;
+}
+
+body.dark-mode footer p {
+    color: white !important;
+}
+
+/* ======================= */
+/* Toggle Button Styles */
+/* ======================= */
+.btn-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #6d6c6c;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-mode-toggle:hover {
+    background-color: #333333;
+}
+
+.btn-mode-toggle img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode .btn-mode-toggle {
+    background-color: #f0f0f0;
+}
+
+body.dark-mode .btn-mode-toggle img {
+    transform: rotate(180deg);
+}
+
+/* ======================= */
+/* Scroll Button Styles */
+/* ======================= */
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    display: none;
+    z-index: 1000;
+}
+
+/* ======================= */
+/* Card Styles */
+/* ======================= */
+/* Default Light Mode Styles */
+.card {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #dddddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Dark Mode Styles */
+body.dark-mode .card {
+    background-color: #333333;
+    color: #f0f0f0;
+    border: 1px solid #444444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .card-title a {
+    color: #f0f0f0;
+}
+
+body.dark-mode .card-text {
+    color: #f0f0f0;
+}
+
+body.dark-mode .card-title {
+
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+/* ======================= */
+/* Carousel Styles */
+/* ======================= */
+.carousel-inner img {
+    max-width: 100%; /* Ensures the image doesn’t exceed the container width */
+    max-height: 600px; /* Adjust this to the maximum desired height */
+    width: auto; /* Maintains the aspect ratio */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the entire image is visible within the bounds */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff; /* White text */
+    padding: 0.5%;
+    bottom: 10%; /* Adjust position if needed */
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+}
+
